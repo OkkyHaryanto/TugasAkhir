@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins";
+  }
+  body {
+    color: rgb(0, 0, 0);
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images1/Free-download-Book-Images.jpg');
+    background-size: cover;     
+    }
+  
+  .sidebar header{
+    font-size: 28px;
+    color: rgb(2, 2, 2);
+    line-height: 70px;
+    text-align: center;
+    background: #5c5c5c;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(199, 243, 4);
+    border-top: 1px solid rgb(0, 255, 255);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    color: #ff0000;
+    font-size: 25px;
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .main{
+      width: 80%;
+      right: 50%;
+      float: right;
+      padding: 30px ;
+  }
+  .main a{
+      color: rgb(255, 136, 1);
+  }
+  .title{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-bottom: 30px;
+      color: rgb(255, 0, 0) !important;
+      
+  }
+  .btn {
+      position: relative;
+      top: 10px;
+      left: 460px;
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 10px;
+      padding: 8px 10px;
+      background: #0059ff;
+      color: white !important;
+      
+  }
+  .btn2 {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 8px;
+      padding: 8px 10px;
+      background: #3498db;
+      color: white !important;
+      border: none;
+  }
+  h2{
+      font-size: 60;
+      text-align: center;
+      text-transform: uppercase;
+      padding-left: 5px;
+      padding-bottom: 10px;
+  }
+  h3{
+      font-size: 60;
+      text-align: center;
+      text-transform: uppercase;
+      padding-left: 5px;
+      padding-bottom: 10px;
+  }
+  label{
+      text-transform: capitalize;
+      font-size: 11pt;
+  }
+  .Input-text{
+      border-radius: 8px;
+      box-sizing : border-box;
+      width: 100%;
+      padding: 10px;
+      font-size: 11pt;
+      margin-bottom: 20px;
+  }
+  .cssmodal {
+      display: flex;
+      position: fixed;
+      left: 0;
+      top: -100%;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      -webkit-transition: top 0s .5s, opacity .5s 0s;
+      transition: top 0s .5s, opacity .5s 0s;
+  }
+   
+  .cssmodal:target {
+      top: 0;
+      opacity: 1;
+      -webkit-transition: none;
+      transition: none;
+  }
+   
+  .cssmodal figure {
+      width: 95%;
+      max-width: 420px;
+      height: 520px;
+      position: relative;
+      padding: 1.5em;
+      opacity: 0;
+      background-color: #fff;
+      -webkit-transition: opacity .5s;
+      transition: opacity .5s;
+  }
+
+  .cssmodal.dialog figure {
+      background: rgb(85, 170, 240);
+      border-radius: 5px;
+      padding-top: 10px;
+  }
+
+  .cssmodal.dialog figure h2 {
+      margin-top: 0;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #eee;
+  }
+
+  .cssmodal:target figure {
+      opacity: 1;
+  }
+   
+  .cssmodal.dialog .smallclose {
+      text-decoration: none;
+      position: absolute;
+      right: 6px;
+      top: 0px;
+      font-size: 36px;
+  }
+
+  .cssmodal .veil {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgb(0, 0, 0);
+      content: "";
+      cursor: default;
+      visibility: hidden;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+  }
+   
+  .cssmodal .veil::before, .cssmodal .veil::after {
+      content: "";
+      display: block;
+      position: fixed;
+      width: 50px;
+      height: 6;
+      background: rgb(0, 0, 0);
+      top: 50%;
+      cursor: pointer;
+      text-indent: -1000px;
+      z-index: 10;
+      top: 30px;
+      right: 5px;
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+      -webkit-transition: all .5s;
+      transition: all .5s;
+  }
+   
+  .cssmodal:target .veil {
+      visibility: visible;
+  }
+  .cssmodal:target .veil::before, .cssmodal:target .veil::after {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+   
+  .cssmodal:target .veil::after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  }
+  a {
+      color: rgb(0, 255, 0);
+      text-decoration: none;
+      font-size: 25px;
+  }
+  a:hover {
+      color: #f00;
+  }
+  footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width:100%;
+      font-size: 11px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background: #03abf8;
+      text-align: center;
+      border-top: 1px solid #999;
+  }
+  table{
+      margin: 50px auto;
+      padding-top: 16px;
+  }
+  table tr {
+      text-align: center;
+      padding-left: 20px;
+  }
+  table th{
+      padding: 15px 35px;
+      border-left:1px solid #080808;
+      border-bottom: 1px solid #030303;
+      background: #d0ff00;
+  }
+  table td {
+      padding: 25px 40px;
+      border-top: 1px solid #ffee01;
+      border-bottom: 1px solid #ffee01;
+      border-left: 1px solid #ffee01;
+      background: #ffffff;
+  }
+  
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 70px;
+      left: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 60px;
+    }
+    .sidebar a i{
+      margin-left: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+    
+  }

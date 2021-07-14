@@ -1,0 +1,74 @@
+
+body {
+    color: rgb(0, 0, 0);
+    background-image: url('https://wallpapercave.com/wp/wp3519671.jpg');
+    background-size: cover;     
+    }
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
+#login {
+	margin: 160px auto;
+	width: 400px;
+}
+
+#login h2 {
+	background-color: #e4f30c;
+	-webkit-border-radius: 40px 40px 0 0;
+	-moz-border-radius: 40px 40px 0 0;
+	border-radius: 40px 40px 0 0;
+	color: rgb(0, 0, 0);
+	font-size: 28px;
+	padding: 30px 36px;
+    
+}
+
+#login h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#login fieldset {
+    margin-left: 0;
+	background-color: rgb(0, 0, 0);
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: rgb(44, 255, 2);
+	margin-bottom: 18px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="text"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: rgb(44, 255, 2);
+	padding: 10px 10px;
+	width: 200px;
+}
+
+#login fieldset input[type="submit"] {
+	background-color: #999999;
+	color: rgb(7, 7, 7);
+	display: block;
+	margin: 0 auto;
+	padding: 8px 0;
+	width: 120px;
+}
